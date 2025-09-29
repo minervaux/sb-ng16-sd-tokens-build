@@ -41,13 +41,10 @@ export const Playground: Story = {
 
         /* ====== Brand-aware button (demuestra brand + mode) ====== */
         .token-button {
-          background: var(--surface-brand-primary);
-          border: 2px solid var(--brand-secondary-100, transparent);
-          box-shadow: 0 0 0 3px var(--brand-primary-opacity-10, transparent);
-          color: var(--color-text-text-brand-primary, #fff);
-          padding: 8px 12px;
-          border-radius: var(--radius-sm, 6px);
-          cursor: pointer;
+          background: var(--color-surface-surface-brand-primary);
+          border: 2px solid var(--color-border-border-brand-secondary);
+          color: var(--color-text-text-brand-primary-invert, #fff);
+          border-radius: var(--core-corner-primitives-2x, 8px);
           font-weight: var(--text-font-weight-700-bold, 700);
         }
 
@@ -79,25 +76,25 @@ export const Playground: Story = {
         <!-- Brand colors -->
         <div class="hstack">
           <div class="label">brand-primary</div>
-          <div class="swatch" style="background: var(--brand-primary)"></div>
-          <div class="value" data-token="--brand-primary"></div>
+          <div class="swatch" style="background: var(--color-surface-surface-brand-primary)"></div>
+          
         </div>
         <div class="hstack">
           <div class="label">brand-secondary-100</div>
-          <div class="swatch" style="background: var(--brand-secondary-100)"></div>
-          <div class="value" data-token="--brand-secondary-100"></div>
+          <div class="swatch" style="background: var(--color-surface-surface-brand-secondary)"></div>
+         
         </div>
         <div class="hstack">
           <div class="label">brand-tertiary</div>
-          <div class="swatch" style="background: var(--brand-tertiary)"></div>
-          <div class="value" data-token="--brand-tertiary"></div>
+          <div class="swatch" style="background: var(--color-surface-surface-brand-tertiary)"></div>
+          
         </div>
 
         <!-- Surface / text sample -->
         <div class="hstack">
           <div class="label">surface-primary</div>
           <div class="swatch" style="background: var(--color-surface-surface-primary)"></div>
-          <div class="value" data-token="--color-surface-surface-primary"></div>
+          
         </div>
         <div class="hstack">
           <div class="label">text-primary sample</div>
