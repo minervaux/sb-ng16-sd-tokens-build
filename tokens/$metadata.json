@@ -1,0 +1,11 @@
+{
+  "tokenSetOrder": [
+    "core/value",
+    "theme/alivi",
+    "theme/green",
+    "theme/red",
+    "theme/purple",
+    "semantics/light-mode",
+    "semantics/dark-mode"
+  ]
+}

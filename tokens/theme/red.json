@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "primary": {
+      "value": "#6f0000",
+      "type": "color"
+    },
+    "secondary-200": {
+      "value": "#c73333",
+      "type": "color"
+    },
+    "secondary-100": {
+      "value": "#ff4a4a",
+      "type": "color"
+    },
+    "tertiary": {
+      "value": "#ff6a00",
+      "type": "color"
+    },
+    "primary-opacity-10": {
+      "value": "#6f00001a",
+      "type": "color"
+    },
+    "secondary-opacity-30": {
+      "value": "#ff4f4f4d",
+      "type": "color"
+    }
+  }
+}

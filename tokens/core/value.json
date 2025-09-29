@@ -1,0 +1,364 @@
+{
+  "color": {
+    "neutral": {
+      "primitives-gray-900": {
+        "value": "#040404",
+        "type": "color"
+      },
+      "primitives-gray-800": {
+        "value": "#242424",
+        "type": "color"
+      },
+      "primitives-white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "primitives-gray-700": {
+        "value": "#444444",
+        "type": "color"
+      },
+      "primitives-gray-600": {
+        "value": "#646464",
+        "type": "color"
+      },
+      "primitives-gray-500": {
+        "value": "#8e8e8e",
+        "type": "color"
+      },
+      "primitives-gray-400": {
+        "value": "#a4a4a4",
+        "type": "color"
+      },
+      "primitives-gray-300": {
+        "value": "#c3c3c3",
+        "type": "color"
+      },
+      "primitives-gray-200": {
+        "value": "#e6e6e6",
+        "type": "color"
+      },
+      "primitives-gray-100": {
+        "value": "#f4f4f4",
+        "type": "color"
+      },
+      "primitives-black": {
+        "value": "#000000",
+        "type": "color"
+      }
+    },
+    "system": {
+      "primitives-blue-100": {
+        "value": "#d3eeff",
+        "type": "color"
+      },
+      "primitives-green-100": {
+        "value": "#baffc8",
+        "type": "color"
+      },
+      "primitives-red-100": {
+        "value": "#ffe9e9",
+        "type": "color"
+      },
+      "primitives-yellow-100": {
+        "value": "#ffe6b6",
+        "type": "color"
+      },
+      "primitives-blue-900": {
+        "value": "#00446d",
+        "type": "color"
+      },
+      "primitives-green-500": {
+        "value": "#00c026",
+        "type": "color"
+      },
+      "primitives-yellow-900": {
+        "value": "#663c00",
+        "type": "color"
+      },
+      "primitives-red-500": {
+        "value": "#ff1212",
+        "type": "color"
+      },
+      "primitives-yellow-50": {
+        "value": "#fea700",
+        "type": "color"
+      },
+      "primitives-green-900": {
+        "value": "#006e16",
+        "type": "color"
+      },
+      "primitives-red-900": {
+        "value": "#b60000",
+        "type": "color"
+      },
+      "primitives-blue-500": {
+        "value": "#3181ea",
+        "type": "color"
+      }
+    }
+  },
+  "text": {
+    "font-family": {
+      "primitives-font-family-primary": {
+        "value": "Lato",
+        "type": "text"
+      },
+      "primitives-font-family-secondary": {
+        "value": "Lato",
+        "type": "text"
+      }
+    },
+    "weight": {
+      "primitives-font-weight-400-regular": {
+        "value": 400,
+        "type": "number"
+      },
+      "primitives-font-weight-700-bold": {
+        "value": 700,
+        "type": "number"
+      }
+    },
+    "size": {
+      "primitives-font-size-2": {
+        "value": 14,
+        "type": "number"
+      },
+      "primitives-font-size-4": {
+        "value": 18,
+        "type": "number"
+      },
+      "primitives-font-size-5": {
+        "value": 20,
+        "type": "number"
+      },
+      "primitives-font-size-3": {
+        "value": 16,
+        "type": "number"
+      },
+      "primitives-font-size-6": {
+        "value": 22,
+        "type": "number"
+      },
+      "primitives-font-size-7": {
+        "value": 24,
+        "type": "number"
+      },
+      "primitives-font-size-8": {
+        "value": 26,
+        "type": "number"
+      },
+      "primitives-font-size-10": {
+        "value": 40,
+        "type": "number"
+      },
+      "primitives-font-size-9": {
+        "value": 32,
+        "type": "number"
+      },
+      "primitives-font-size-1": {
+        "value": 12,
+        "type": "number"
+      },
+      "primitives-font-size-11": {
+        "value": 48,
+        "type": "number"
+      },
+      "primitives-font-size-12": {
+        "value": 54,
+        "type": "number"
+      },
+      "primitives-font-size-0": {
+        "value": 10,
+        "type": "number"
+      }
+    }
+  },
+  "spacing": {
+    "primitives-1x": {
+      "value": 4,
+      "type": "number"
+    },
+    "primitives-2x": {
+      "value": 8,
+      "type": "number"
+    },
+    "primitives-4x": {
+      "value": 16,
+      "type": "number"
+    },
+    "primitives-6x": {
+      "value": 24,
+      "type": "number"
+    },
+    "primitives-8x": {
+      "value": 32,
+      "type": "number"
+    },
+    "primitives-10x": {
+      "value": 40,
+      "type": "number"
+    },
+    "primitives-5x": {
+      "value": 20,
+      "type": "number"
+    }
+  },
+  "corner": {
+    "primitives-1x": {
+      "value": 4,
+      "type": "number"
+    },
+    "primitives-2x": {
+      "value": 8,
+      "type": "number"
+    },
+    "primitives-4x": {
+      "value": 16,
+      "type": "number"
+    },
+    "primitives-full": {
+      "value": 999,
+      "type": "number"
+    },
+    "primitives-3x": {
+      "value": 12,
+      "type": "number"
+    }
+  },
+  "opacity": {
+    "primitives-opacity-60": {
+      "value": 60,
+      "type": "number"
+    },
+    "primitives-opacity-25": {
+      "value": 25,
+      "type": "number"
+    },
+    "primitives-opacity-10": {
+      "value": 10,
+      "type": "number"
+    },
+    "primitives-opacity-40": {
+      "value": 40,
+      "type": "number"
+    },
+    "primitives-opacity-34": {
+      "value": 34,
+      "type": "number"
+    },
+    "primitives-opacity-8": {
+      "value": 8,
+      "type": "number"
+    },
+    "primitives-opacity-12": {
+      "value": 12,
+      "type": "number"
+    },
+    "primitives-opacity-80": {
+      "value": 80,
+      "type": "number"
+    }
+  },
+  "border-width": {
+    "primitives-xxsmall": {
+      "value": 0.5,
+      "type": "number"
+    },
+    "primitives-xsmall": {
+      "value": 1,
+      "type": "number"
+    },
+    "primitives-medium": {
+      "value": 1.5,
+      "type": "number"
+    },
+    "primitives-large": {
+      "value": 2,
+      "type": "number"
+    },
+    "primitives-xlarge": {
+      "value": 4,
+      "type": "number"
+    },
+    "primitives-small": {
+      "value": 1.2,
+      "type": "number"
+    },
+    "primitives-xxlarge": {
+      "value": 8,
+      "type": "number"
+    }
+  },
+  "graphic-size": {
+    "primitives-size-4x": {
+      "value": 16,
+      "type": "number"
+    },
+    "primitives-size-8x": {
+      "value": 32,
+      "type": "number"
+    },
+    "primitives-size-10x": {
+      "value": 40,
+      "type": "number"
+    },
+    "primitives-size-24x": {
+      "value": 96,
+      "type": "number"
+    },
+    "primitives-size-6x": {
+      "value": 24,
+      "type": "number"
+    },
+    "primitives-size-16x": {
+      "value": 64,
+      "type": "number"
+    },
+    "primitives-size-45x": {
+      "value": 180,
+      "type": "number"
+    },
+    "primitives-size-85x": {
+      "value": 340,
+      "type": "number"
+    },
+    "primitives-size-12x": {
+      "value": 48,
+      "type": "number"
+    }
+  },
+  "effects": {
+    "primitives-position-1": {
+      "value": 1,
+      "type": "number"
+    },
+    "primitives-position-minus-1": {
+      "value": -1,
+      "type": "number"
+    },
+    "primitives-position-4": {
+      "value": 4,
+      "type": "number"
+    },
+    "primitives-position-8": {
+      "value": 8,
+      "type": "number"
+    },
+    "primitives-blur-2": {
+      "value": 2,
+      "type": "number"
+    },
+    "primitives-blur-8": {
+      "value": 8,
+      "type": "number"
+    },
+    "primitives-blur-16": {
+      "value": 16,
+      "type": "number"
+    },
+    "primitives-spread-4": {
+      "value": 4,
+      "type": "number"
+    }
+  }
+}
