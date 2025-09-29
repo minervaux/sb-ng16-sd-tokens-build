@@ -6,8 +6,6 @@ setCompodocJson(docJson);
 
 export const globalTypes = {
   brand: {
-    name: 'Brand',
-    defaultValue: 'alivi',
     toolbar: {
       icon: 'paintbrush',
       items: [
@@ -19,10 +17,8 @@ export const globalTypes = {
     },
   },
   mode: {
-    name: 'Mode',
-    defaultValue: 'light',
     toolbar: {
-      icon: 'mirror',
+      icon: 'contrast',
       items: [
         { value: 'light', title: 'Light' },
         { value: 'dark', title: 'Dark' },
@@ -31,23 +27,28 @@ export const globalTypes = {
   },
 };
 
-const withBrandAndMode = (Story: any, context: any) => {
-  const root = document.documentElement;
-  root.classList.remove(
+const applyGlobals = (globals: any) => {
+  const html = document.documentElement;
+  html.classList.remove(
     'brand-alivi','brand-green','brand-purple','brand-red',
     'mode-light','mode-dark'
   );
-  root.classList.add(`brand-${context.globals.brand}`, `mode-${context.globals.mode}`);
+  html.classList.add(`brand-${globals?.brand || 'red'}`);
+  html.classList.add(`mode-${globals?.mode || 'light'}`);
+};
+
+// 👇 sin imports raros; sin implicit-any
+const withGlobals = (Story: any, context: any) => {
+  applyGlobals(context.globals);
   return Story();
 };
 
+export const decorators = [withGlobals];
+
 const preview: Preview = {
-  decorators: [withBrandAndMode],
   parameters: {
-    backgrounds: { disable: true },
-    controls: {
-      matchers: { color: /(background|color)$/i, date: /Date$/i },
-    },
+    controls: { matchers: { color: /(background|color)$/i, date: /Date$/i } },
+    globals: { brand: 'red', mode: 'light' },
   },
 };
 
