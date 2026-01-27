@@ -91,7 +91,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-d7bf0323e6da130e2609e2af0117b4a8d7cd874132206af50bf43dfc37044485fe50f2867ea76525730dd195b9b95a43802a12dadc6ad5cd7bf2faa07f19f0da",
+            "id": "component-ButtonComponent-5747b2121bdc472b32e41e4e47db44dbd7601fe73e9c7b3d0f82e7d1aaf97be0d13d4880fee19b0e4d511178aa52a24a5a9ea3ee0034d204ffd659c0aae43e41",
             "file": "src/stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -125,16 +125,16 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 760,
-                            "end": 773,
+                            "pos": 793,
+                            "end": 807,
                             "kind": 327,
                             "id": 0,
                             "flags": 16842752,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "tagName": {
-                                "pos": 761,
-                                "end": 769,
+                                "pos": 794,
+                                "end": 802,
                                 "kind": 80,
                                 "id": 0,
                                 "flags": 16842752,
@@ -201,11 +201,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /** Is this the principal call to action on the page? */\n  @Input()\n  primary = false;\n\n  /** What background color to use */\n  @Input()\n  backgroundColor?: string;\n\n  /** How large should the button be? */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /** Optional click handler */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'storybook-button',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  template: ` <button\r\n  type=\"button\"\r\n  (click)=\"onClick.emit($event)\"\r\n  [ngClass]=\"classes\"\r\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n>\r\n  {{ label }}\r\n</button>`,\r\n  styleUrls: ['./button.css'],\r\n})\r\nexport class ButtonComponent {\r\n  /** Is this the principal call to action on the page? */\r\n  @Input()\r\n  primary = false;\r\n\r\n  /** What background color to use */\r\n  @Input()\r\n  backgroundColor?: string;\r\n\r\n  /** How large should the button be? */\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  /**\r\n   * Button contents\r\n   *\r\n   * @required\r\n   */\r\n  @Input()\r\n  label = 'Button';\r\n\r\n  /** Optional click handler */\r\n  @Output()\r\n  onClick = new EventEmitter<Event>();\r\n\r\n  public get classes(): string[] {\r\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\r\n\r\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".storybook-button {\n  display: inline-block;\n  cursor: pointer;\n  border-width: var(--border-width-primitives-large);\n  border-color: var(--color-border-border-brand-primary, #002A4E);\n  border-radius: var(--corner-primitives-2x);\n  text-transform: uppercase;\n  font-weight: var(--text-weight-primitives-font-weight-700-bold);\n  line-height: 1;\n  font-family: var(--text-font-family-primitives-font-family-primary, Lato, Helvetica, Arial, sans-serif);\n}\n.storybook-button--primary {\n  box-shadow: var(--color-shadow-shadow-primary, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset);\n  background-color: var(--color-surface-surface-brand-primary, #002A4E);\n  color: var(--color-text-text-primary-invert, #FFFFFF);\n}\n.storybook-button--secondary {\n  box-shadow: var(--color-shadow-shadow-secondary, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset);\n  background-color: var(--color-surface-surface-primary);\n  color: var(--color-text-text-brand-primary);\n}\n.storybook-button--small {\n  padding: 10px 16px;\n  font-size: 12px;\n}\n.storybook-button--medium {\n  padding: 11px 20px;\n  font-size: 14px;\n}\n.storybook-button--large {\n  padding: 12px 24px;\n  font-size: 16px;\n}\n",
+                    "data": ".storybook-button {\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  border-width: var(--border-width-primitives-large);\r\n  border-color: var(--color-border-border-brand-primary, #002A4E);\r\n  border-radius: var(--corner-primitives-2x);\r\n  text-transform: uppercase;\r\n  font-weight: var(--text-weight-primitives-font-weight-700-bold);\r\n  line-height: 1;\r\n  font-family: var(--text-font-family-primitives-font-family-primary, Lato, Helvetica, Arial, sans-serif);\r\n}\r\n.storybook-button--primary {\r\n  box-shadow: var(--color-shadow-shadow-primary, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset);\r\n  background-color: var(--color-surface-surface-brand-primary, #002A4E);\r\n  color: var(--color-text-text-primary-invert, #FFFFFF);\r\n}\r\n.storybook-button--secondary {\r\n  box-shadow: var(--color-shadow-shadow-secondary, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset);\r\n  background-color: var(--color-surface-surface-primary);\r\n  color: var(--color-text-text-brand-primary);\r\n}\r\n.storybook-button--small {\r\n  padding: 10px 16px;\r\n  font-size: 12px;\r\n}\r\n.storybook-button--medium {\r\n  padding: 11px 20px;\r\n  font-size: 14px;\r\n}\r\n.storybook-button--large {\r\n  padding: 12px 24px;\r\n  font-size: 16px;\r\n}\r\n",
                     "styleUrl": "./button.css"
                 }
             ],
