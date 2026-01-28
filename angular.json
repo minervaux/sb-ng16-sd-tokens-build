@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sb-ng16-sd-tokens-build:build:production"
+              "buildTarget": "sb-ng16-sd-tokens-build:build:production"
             },
             "development": {
-              "browserTarget": "sb-ng16-sd-tokens-build:build:development"
+              "buildTarget": "sb-ng16-sd-tokens-build:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sb-ng16-sd-tokens-build:build"
+            "buildTarget": "sb-ng16-sd-tokens-build:build"
           }
         },
         "test": {

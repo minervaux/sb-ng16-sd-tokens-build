@@ -1,8 +1,14 @@
-@import "styles/tokens/primitives.css";
-@import "styles/tokens/brand-alivi.css";
-@import "styles/tokens/brand-green.css";
-@import "styles/tokens/brand-purple.css";
-@import "styles/tokens/brand-red.css";
-@import "styles/tokens/mode-light.css";
-@import "styles/tokens/mode-dark.css";
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+
+/* 1. Core primitives */
+@import './styles/tokens/primitives.css';
+
+/* 2. Semantic modes (light/dark) */
+@import './styles/tokens/mode-light.css';
+@import './styles/tokens/mode-dark.css';
+
+/* 3. Brand themes (estos deben ir al final para que dominen el cascade) */
+@import './styles/tokens/brand-alivi.css';
+@import './styles/tokens/brand-green.css';
+@import './styles/tokens/brand-purple.css';
+@import './styles/tokens/brand-red.css';
